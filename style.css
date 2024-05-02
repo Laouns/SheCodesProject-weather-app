@@ -2,13 +2,13 @@ body {
    background-image: linear-gradient(to bottom, #092743, #004561, #005564, #1a7c6a, #2cac6a);
    color: aliceblue;
    font-family: "Lato", sans-serif;
-   font-weight: 200;
+   font-weight: 300;
    font-style: normal;
-   text-align: center;
+   text-align: left;
    margin: 0;
    font-size: 18px;
+   height: auto;
    line-height: 1.3;
-   height: 94vh;
 }
 
 header form {
@@ -21,24 +21,42 @@ header form {
 
 }
 
+header img {
+   width: 70px;
+   padding: 5px;
+   display: block;
+   margin: 0 auto;
+}
+
 main {
    display: flex;
-   justify-content: space-around;
-
+   justify-content: space-between;
+   border-top: #2792766f 1px solid;
+   margin: 30px 0;
+   padding: 0 20px;
 }
 
 main h1 {
+   display: flex;
+   font-size: 45px;
+   line-height: 0.9;
+}
+
+main h1 .temp {
    font-size: 70px;
+   padding: 9px 0;
 }
 
-main h1 span {
-   font-size: 20px;
-   font-weight: 100;
-   float: right;
-}
-
-main h2 {
+main h1 .icon {
    font-size: 40px;
+   margin-top: 20px;
+}
+
+main h1 .unit {
+   font-size: 20px;
+   font-weight: 300;
+   float: right;
+   margin-top: 13px;
 }
 
 footer {
@@ -46,16 +64,16 @@ footer {
    border-top: #2792766f 1px solid;
    margin: 30px 0;
    padding: 10px 0;
-
+   text-align: center;
 }
 
 footer a {
-   font-weight: 500;
-   color: #004561;
+   font-weight: 600;
+   color: #88c709;
    text-decoration: none;
 }
 
-.input {
+#input {
    border: none;
    background-color: transparent !important;
    width: 55%;
@@ -67,36 +85,40 @@ footer a {
    font-size: 16px;
 }
 
-.input::placeholder {
+#input::placeholder {
    color: rgba(240, 248, 255, 0.415);
    font-family: "Lato", sans-serif;
    font-size: 16px;
-   font-weight: 500;
+   font-weight: 400;
 }
 
-.btn {
+#btn {
    background-color: transparent !important;
    border: none;
    color: aliceblue;
    padding: auto;
    font-family: "Lato", sans-serif;
    font-size: 16px;
-   font-weight: 700;
+   font-weight: 600;
    cursor: pointer;
    width: 20%;
    margin: 0 auto;
 }
 
 .container {
-   background-color: rgba(55, 55, 55, 0.252);
-   width: 500px;
-   margin: 80px auto;
-   border-radius: 40px 5px;
-   padding: 50px 40px 0 40px;
-   box-shadow: 0 1px 10px rgba(59, 59, 59, 0.369);
+   background-color: rgba(32, 61, 93, 0.228);
+   width: 510px;
+   margin: 60px auto;
+   border-radius: 40px 0;
+   padding: 40px 40px 0 40px;
+   box-shadow: 0 1px 30px rgba(72, 109, 98, 0.308);
+}
 
+.location {
+   width: 60%;
 }
 
 .location span {
-   font-weight: 400;
+   font-weight: 600;
    color: #88c709;
+}

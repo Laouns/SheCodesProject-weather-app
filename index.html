@@ -16,19 +16,30 @@
   <body>
     <div class="container">
       <header>
-        <form action="#">
-          <input type="text" placeholder="Enter a city..." class="input"/>
-          <input type="submit" value="Search" class="btn"/>
+        <img src="woman.svg" alt="logo" />
+
+        <form action="#" id="search-city">
+          <input type="text" placeholder="Enter a city..." id="input" />
+          <input type="submit" value="Search" id="btn" />
         </form>
       </header>
       <main>
         <div class="location">
-          <h2>Paris</h2>
-          <p>Monday 15:23, broken clouds</p>
-          <p>Humidity: <span>68%</span>, Wind: <span>3.6km/h</span></p>
+          <!-- <h1>Will it rain today?</h1> -->
+          <h1 id="current-city">Paris</h1>
+          <p>
+            Monday 15:23, broken clouds
+            <br />
+            Humidity: <span>18%</span>, Wind: <span>3.6km/h</span>
+          </p>
         </div>
-        <div>
-          <h1>⛈️ 15 <span> °C</span></h1>
+        <div class="weather">
+          <h1>
+            <div class="icon">⛅</div>
+
+            <div class="temp">78</div>
+            <div class="unit">°C</div>
+          </h1>
         </div>
       </main>
 
@@ -40,6 +51,8 @@
           >, open-sourced on
           <a
             href="https://github.com/Laouns/SheCodesProjects/tree/weather_app_2"
+            target="_blank"
+            rel="noreferrer"
             >GitHub</a
           >
           and hosted on
