@@ -1,5 +1,9 @@
+html {
+   height: 100%;
+}
+
 body {
-   background-image: linear-gradient(to bottom, #092743, #004561, #005564, #1a7c6a, #2cac6a);
+   background-image: linear-gradient(to top, #092651, #0a3b60, #145a90, #34b99a);
    color: aliceblue;
    font-family: "Lato", sans-serif;
    font-weight: 300;
@@ -7,32 +11,48 @@ body {
    text-align: left;
    margin: 0;
    font-size: 18px;
-   height: auto;
+   height: 100%;
    line-height: 1.3;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 15px;
+}
+
+.logo h3 {
+   font-weight: 100;
+   font-size: 18px;
+   line-height: 0.9;
+   text-align: right;
+   margin: 0;
+   margin-right: 10px;
+}
+
+header img {
+   width: 45px;
+   display: block;
+   margin: 2px auto;
 }
 
 header form {
-   width: 400px;
+   max-width: 400px;
+   width: auto;
    margin: 0 auto;
    padding: 10px 0;
    background-color: rgba(189, 189, 189, 0.119);
    border-radius: 30px;
    display: flex;
-
-}
-
-header img {
-   width: 70px;
-   padding: 5px;
-   display: block;
-   margin: 0 auto;
 }
 
 main {
    display: flex;
    justify-content: space-between;
    border-top: #2792766f 1px solid;
-   margin: 30px 0;
+   margin: 30px 0 20px 0;
    padding: 0 20px;
 }
 
@@ -65,7 +85,7 @@ main h1 .unit {
 footer {
    font-size: 16px;
    border-top: #2792766f 1px solid;
-   margin: 30px 0;
+   margin: 10px 0;
    padding: 10px 0;
    text-align: center;
 }
@@ -110,8 +130,9 @@ footer a {
 }
 
 .container {
-   background-color: rgba(32, 61, 93, 0.228);
-   width: 510px;
+   background-color: rgba(32, 62, 93, 0.202);
+   max-width: 510px;
+   width: 80%;
    margin: 60px auto;
    border-radius: 40px 0;
    padding: 40px 40px 0 40px;
@@ -120,6 +141,9 @@ footer a {
 
 .location {
    width: 60%;
+   margin-top: 15px;
+   margin-right: 10px;
+   box-sizing: border-box;
 }
 
 #description {
@@ -132,6 +156,6 @@ footer a {
 }
 
 .weather {
-   padding-top: 60px;
-
+   margin: 50px 0 0 0;
+   padding: 25px 0 0 0;
 }
