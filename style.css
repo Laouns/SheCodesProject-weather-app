@@ -43,13 +43,14 @@ main h1 {
 }
 
 main h1 .temp {
-   font-size: 70px;
-   padding: 9px 0;
+   font-size: 90px;
+   font-weight: 300;
+ 
 }
 
-main h1 .icon {
-   font-size: 40px;
-   margin-top: 20px;
+main h1 img {
+   width: 70px;
+   margin: 8px -5px 0 0;
 }
 
 main h1 .unit {
@@ -83,6 +84,7 @@ footer a {
    color: aliceblue;
    font-family: "Lato", sans-serif;
    font-size: 16px;
+   
 }
 
 #input::placeholder {
@@ -118,7 +120,11 @@ footer a {
    width: 60%;
 }
 
-.location span {
+#description {
+   text-transform: capitalize;
+}
+
+.highlight {
    font-weight: 600;
    color: #88c709;
 }

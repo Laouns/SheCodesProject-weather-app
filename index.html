@@ -19,26 +19,32 @@
       <header>
         <img src="woman.svg" alt="logo" />
 
-        <form action="#" id="search-city">
+        <form action="#" id="search-city" autocomplete="off">
           <input type="text" placeholder="Enter a city..." id="input" />
           <input type="submit" value="Search" id="btn" />
         </form>
       </header>
       <main>
         <div class="location">
-          <!-- <h1>Will it rain today?</h1> -->
-          <h1 id="current-city">Paris</h1>
+          <h1 id="current-city">Will it rain today?</h1>
           <p>
-            Monday 15:23, broken clouds
+            <span id="timestamp"></span>
             <br />
-            Humidity: <span>18%</span>, Wind: <span>3.6km/h</span>
+            <span id="description"> </span>
+            <br />
+            Humidity: <span class="highlight" id="humidity"> </span>, Wind:
+            <span class="highlight" id="windSpeed"> </span>
           </p>
         </div>
         <div class="weather">
           <h1>
-            <div class="icon">⛅</div>
-
-            <div class="temp">78</div>
+            <div id="icon">
+              <img
+                src="rain-forecast-svgrepo-com.svg"
+                alt="weather-icon"
+              />
+            </div>
+            <div class="temp" id="temp"></div>
             <div class="unit">°C</div>
           </h1>
         </div>

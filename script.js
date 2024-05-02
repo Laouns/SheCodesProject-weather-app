@@ -1,7 +1,49 @@
+function updateWeather(response) {
+  let clearInput = document.querySelector("#input");
+  clearInput.value = "";
+
+  let temperature = document.querySelector("#temp");
+  temperature.innerHTML = Math.round(response.data.temperature.current);
+
+  let searchCity = document.querySelector("#current-city");
+  searchCity.innerHTML = response.data.city;
+
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.condition.description;
+
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = `${response.data.temperature.humidity}%`;
+
+  let wind = document.querySelector("#windSpeed");
+  wind.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
+
+  let date = new Date(response.data.time * 1000);
+  timestamp = document.querySelector("#timestamp");
+  timestamp.innerHTML = `${date.toLocaleDateString("en-US", {
+    weekday: "long",
+  })}, ${date.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  })}`;
+
+  let icon = document.querySelector("#icon");
+  icon.innerHTML = `<img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png" />`;
+}
+
+function getWeather(city) {
+  //make api call and update details inteface
+  let apiKey = "67d0faba43ba3e4a6a1f2t07194ao013";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(updateWeather);
+}
+
 let search = document.getElementById("search-city");
 search.addEventListener("submit", function (event) {
-   event.preventDefault();
-   let city = document.querySelector("#input").value;
-   let searchCity = document.querySelector("#current-city");
-   searchCity.innerHTML = city;
+  event.preventDefault();
+  let city = document.querySelector("#input").value;
+
+  getWeather(city);
 });
+
+//default city upon reload
+getWeather("Bogota");
