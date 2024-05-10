@@ -1,5 +1,6 @@
 html {
-   height: 100%;
+   height: auto;
+   min-height: 100%;
 }
 
 body {
@@ -49,17 +50,18 @@ header form {
 }
 
 main {
-   display: flex;
    justify-content: space-between;
    border-top: #2792766f 1px solid;
-   margin: 30px 0 20px 0;
+   margin: 20px 0;
    padding: 0 20px;
+
 }
 
 main h1 {
    display: flex;
    font-size: 45px;
    line-height: 0.9;
+   margin: 20px 0;
 }
 
 main h1 .temp {
@@ -93,6 +95,10 @@ footer a {
    font-weight: 600;
    color: #88c709;
    text-decoration: none;
+}
+
+.weatherToday {
+   display: flex;
 }
 
 #input {
@@ -158,6 +164,38 @@ footer a {
    margin: 50px 0 0 0;
    padding: 25px 0 0 0;
    width: 40%;
+}
+
+.weatherForecast {
+   border: none;
+   background-color: rgba(189, 189, 189, 0.119);
+   margin: 10px 0 40px 0;
+   padding: 30px 25px;
+   border-radius: 30px;
+   display: flex;
+   text-align: center;
+   font-size: smaller;
+   justify-content: space-between;
+
+}
+
+.weatherForecast h3 {
+   margin: 0;
+   padding: 0;
+}
+
+.weatherForecast img {
+   width: 30px;
+   margin: 10px 0;
+   background-color: rgba(189, 189, 189, 0.119);
+   border-radius: 10px;
+}
+
+.weatherForecast span {
+   font-weight: 400;
+}
+.weatherForecast .min {
+   opacity: 0.6;
 }
 
 @media screen and (max-width: 500px) {
