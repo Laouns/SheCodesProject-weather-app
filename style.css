@@ -137,7 +137,7 @@ footer a {
 .container {
    background-color: rgba(32, 62, 93, 0.202);
    max-width: 510px;
-   width: 90%;
+   width: 100%;
    margin: 60px auto;
    border-radius: 40px 0;
    padding: 40px 40px 0 40px;
@@ -168,7 +168,7 @@ footer a {
 
 .weatherForecast {
    border: none;
-   background-color: rgba(189, 189, 189, 0.119);
+   background-color: rgba(189, 189, 189, 0.062);
    margin: 10px 0 40px 0;
    padding: 30px 25px;
    border-radius: 30px;
@@ -182,10 +182,12 @@ footer a {
 .weatherForecast h3 {
    margin: 0;
    padding: 0;
+   opacity: 0.5;
+
 }
 
 .weatherForecast img {
-   width: 30px;
+   width: 50px;
    margin: 10px 0;
 }
 
@@ -193,35 +195,85 @@ footer a {
    font-weight: 600;
    color: #88c709;
 }
+
 .weatherForecast .min {
-   opacity: 0.5;
+   color: #092651;
+   opacity: 0.8;
 }
 
 @media screen and (max-width: 500px) {
    body {
       font-size: 16px;
       text-align: center;
-   }
-
-   main {
-      flex-direction: column;
-      margin: 30px auto;
-   }
-
-   .location {
-      width: 100%;
-      margin: 0;
-   }
-
-   .weather {
-      width: 100%;
       margin: 0;
       padding: 0;
    }
 
+   .container {
+      width: 100%;
+      margin: 15px auto;
+      padding: 0 auto;
+      box-sizing: border-box;
+   }
+
+   section {
+      margin: 0 auto;
+      padding: 0;
+   }
+
+   .weatherToday {
+      flex-direction: column;
+      margin: 0;
+      padding: 20px 0;
+   }
+
+   .location {
+      margin: 0 auto;
+   }
+
+   .weather {
+      margin: 0 auto;
+      padding: 0;
+   }
+
+   .weatherForecast {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 60%;
+   }
+
+   .weatherForecast .column {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+   }
+
+   .weatherForecast img {
+      margin: 0 10px;
+   }
+
+   main {
+      margin: 20px auto;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
    main h1 {
       justify-content: center;
+      margin: 0;
+      padding-top: 5px;
+      width: 90%;
    }
+
+   main h1 p {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+   }
+
 
    main h1 .temp {
       font-size: 60px;
@@ -233,4 +285,9 @@ footer a {
       padding: 0;
    }
 
+   footer {
+      width: 90%;
+   }
+
+   ;
 }
