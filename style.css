@@ -70,10 +70,11 @@ main h1 .temp {
 }
 
 main h1 img {
-   width: 50px;
-   margin: 25px 5px 0 0;
+   width: 60px;
+   margin: 15px 5px 0 0;
    background-color: rgba(189, 189, 189, 0.119);
-   border-radius: 20px 2px 20px 20px;
+   border-radius: 10px;
+
 }
 
 main h1 .unit {
@@ -168,27 +169,27 @@ footer a {
 
 .weatherForecast {
    border: none;
-   background-color: rgba(189, 189, 189, 0.062);
+   background-color: rgba(189, 189, 189, 0.119);
    margin: 10px 0 40px 0;
    padding: 30px 25px;
-   border-radius: 30px;
+   border-radius: 20px;
    display: flex;
    text-align: center;
    font-size: smaller;
    justify-content: space-between;
-
 }
 
 .weatherForecast h3 {
    margin: 0;
    padding: 0;
    opacity: 0.5;
+   font-weight: 400;
 
 }
 
 .weatherForecast img {
-   width: 50px;
-   margin: 10px 0;
+   width: 45px;
+   margin: 0 auto;
 }
 
 .weatherForecast span {
@@ -242,11 +243,12 @@ footer a {
    .weatherForecast {
       flex-direction: column;
       margin: 0 auto;
+      padding: 0;
       width: 70%;
    }
 
    .weatherForecast .column {
-      margin: 10px 0;
+      margin: 15px auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -268,11 +270,9 @@ footer a {
       justify-content: center;
       margin: 0;
       padding-top: 5px;
-      width: 90%;
    }
 
    main h1 p {
-      width: 90%;
       margin: 0 auto;
       padding: 0;
    }
@@ -288,7 +288,7 @@ footer a {
    }
 
    footer {
-      width: 90%;
+      width: 100%;
    }
 
 
