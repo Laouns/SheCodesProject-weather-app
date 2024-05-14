@@ -187,15 +187,14 @@ footer a {
 .weatherForecast img {
    width: 30px;
    margin: 10px 0;
-   background-color: rgba(189, 189, 189, 0.119);
-   border-radius: 10px;
 }
 
 .weatherForecast span {
-   font-weight: 400;
+   font-weight: 600;
+   color: #88c709;
 }
 .weatherForecast .min {
-   opacity: 0.6;
+   opacity: 0.5;
 }
 
 @media screen and (max-width: 500px) {
